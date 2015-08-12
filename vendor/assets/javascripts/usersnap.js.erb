@@ -8,10 +8,3 @@ function loadUsersnap(){
     var x = document.getElementsByTagName('script')[0];
     x.parentNode.insertBefore(s, x);
 };
-
-$(document).on('page:change', function(event) {
-    var usersnapTags = $(document).find("#include-usersnap");
-    if (usersnapTags.length){
-	loadUsersnap();
-    }
-});
