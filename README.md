@@ -30,6 +30,13 @@ Or if your css manifest file is .scss
 @import "usersnap_rails";
 ```
 
+Configure your Usersnap API key
+usersnap_rails assumes that your Usersnap API key is stored in a config variable called usersnap_api_key
+Set its value in an initializer (e.g. config/initializers/usersnap.rb) or in the environment-specific config files:
+```
+Rails.application.config.usersnap_api_key = "x1x2a1-whatever-aa55";
+```
+
 On the pages where the Usersnap-widget should appear, add an element with the ID "include-usersnap-widget".
 ```
 <div id="include-usersnap-widget"></div>
