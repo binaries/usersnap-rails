@@ -12,15 +12,36 @@ gem 'usersnap_rails'
 
 And then execute:
 
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install usersnap_rails
+    $ bundle install
 
 ## Usage
+Add to your app/assets/javascripts/application.js
+```
+//= require usersnap_rails
+```
 
-TODO: Write usage instructions here
+Add to your app/assets/stylesheets/application.css
+```
+*= require usersnap_rails
+```
+
+Or if your css manifest file is .scss
+```
+@import "usersnap_rails";
+```
+
+On the pages where the Usersnap-widget should appear, add an element with the ID "include-usersnap-widget".
+```
+<div id="include-usersnap-widget"></div>
+```
+If you want it to appear an all pages, add it to app/views/layouts/application.html.erb.
+If you want to make the Usersnap widget available only to specific users, you can write something like this:
+```
+<% if current_user.is_allowed_to_report_bug? %>
+<% end %>
+```
+
+The positioning of the element doesn't influence where the Usersnap-widget will appear.
 
 ## Contributing
 
