@@ -3,6 +3,6 @@
 $(document).on('page:change', function(event) {
     var usersnapTags = $(document).find("#include-usersnap-widget");
     if (usersnapTags.length){
-	loadUsersnapWidget();
+	loadUsersnapWidget('<%= Rails.application.config.usersnap_api_key %>');
     }
 });
