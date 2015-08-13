@@ -1,8 +1,8 @@
 //= require usersnap
 
 $(document).on('page:change', function(event) {
-    var usersnapTags = $(document).find("#include-usersnap");
+    var usersnapTags = $(document).find("#include-usersnap-widget");
     if (usersnapTags.length){
-	loadUsersnap();
+	loadUsersnapWidget();
     }
 });
