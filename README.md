@@ -1,6 +1,7 @@
 # UsersnapRails
 
-TODO: Write a gem description
+The usersnap_rails gem integrates the Usersnap widget with the Rails asset pipeline.
+This gem isn't maintained by the official Usersnap team, and it comes without any guarantee.
 
 ## Installation
 
@@ -27,7 +28,7 @@ Add to your app/assets/stylesheets/application.css
 *= require usersnap_rails
 ```
 
-Or if your css manifest file is .scss
+Or if your manifest file is .scss
 ```
 @import "usersnap_rails";
 ```
