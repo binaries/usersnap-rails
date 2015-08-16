@@ -40,6 +40,7 @@ Set its value in an initializer (e.g. config/initializers/usersnap.rb) or in the
 ```
 Rails.application.config.usersnap_api_key = "x1x2a1-whatever-aa55";
 ```
+Restart the application.
 
 ### Activate the Usersnap widget in views
 On the pages where the Usersnap widget should appear, add an element with the ID "include-usersnap-widget".
@@ -58,7 +59,7 @@ The positioning of the hidden element doesn't influence where the Usersnap widge
 
 ## Contributing
 
-1. Fork it ( https://github.com/[my-github-username]/usersnap-rails/fork )
+1. Fork it ( https://github.com/r11runner/usersnap-rails/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
