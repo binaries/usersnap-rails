@@ -1,6 +1,7 @@
-# UsersnapRails
+# usersnap-rails
 
-The usersnap-rails gem integrates the Usersnap widget with the Rails asset pipeline.
+The usersnap-rails gem integrates the [Usersnap](https://usersnap.com/) widget with the Rails asset pipeline.
+In order to use it you have to [register an account at Usersnap](https://usersnap.com/#signup) and add your project. Each project has an own API-key.
 This gem isn't maintained by the official Usersnap team, and it comes without any guarantee.
 
 ## Installation
@@ -40,8 +41,8 @@ Set its value in an initializer (e.g. config/initializers/usersnap.rb) or in the
 Rails.application.config.usersnap_api_key = "x1x2a1-whatever-aa55";
 ```
 
-### Activate the Usersnap-widget in views
-On the pages where the Usersnap-widget should appear, add an element with the ID "include-usersnap-widget".
+### Activate the Usersnap widget in views
+On the pages where the Usersnap widget should appear, add an element with the ID "include-usersnap-widget".
 ```
 <div id="include-usersnap-widget"></div>
 ```
@@ -53,7 +54,7 @@ If you want to make the Usersnap widget available only to specific users, you ca
 <% end %>
 ```
 
-The positioning of the element doesn't influence where the Usersnap-widget will appear.
+The positioning of the hidden element doesn't influence where the Usersnap widget will appear.
 
 ## Contributing
 
