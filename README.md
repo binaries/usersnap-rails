@@ -1,7 +1,7 @@
 # usersnap-rails
 
-The usersnap-rails gem integrates the [Usersnap](https://usersnap.com/) widget with the Rails asset pipeline.
-In order to use it you have to [register an account at Usersnap](https://usersnap.com/#signup) and add your project. Each project has an own API-key.
+The usersnap-rails gem integrates the [Usersnap](https://usersnap.com/) widget with the Rails asset pipeline.  
+In order to use it you have to [register an account at Usersnap](https://usersnap.com/#signup) and add your project. Each project has an own API-key.  
 This gem isn't maintained by the official Usersnap team, and it comes without any guarantee.
 
 ## Installation
@@ -56,6 +56,17 @@ If you want to make the Usersnap widget available only to specific users, you ca
 ```
 
 The positioning of the hidden element doesn't influence where the Usersnap widget will appear.
+
+### Customizing
+Usersnap provides a [JavaScript API](https://usersnap.com/docs) to customize the widget: position, language, several event handlers etc. e.g.
+```
+var _usersnapconfig = {
+    halign: 'left',
+    btnText: 'Report a bug'
+ };
+```
+Add your customizing code to an arbitrary js-file and reference it in your JavaScript manifest file.  
+The [Usersnap Developer API and Documentation](https://usersnap.com/docs) gives an overview about the customizing possibilities.
 
 ## Contributing
 
