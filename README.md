@@ -1,7 +1,7 @@
 # usersnap-rails
 
 The usersnap-rails gem integrates the [Usersnap](https://usersnap.com/) widget with the Rails asset pipeline.  
-In order to use it you have to [register an account at Usersnap](https://usersnap.com/#signup) and add your project. Each project has an own API-key.  
+In order to use it you have to [register an account at Usersnap](https://usersnap.com/#signup) and add your project. Each project has its own API-key.  
 This gem isn't maintained by the official Usersnap team, and it comes without any guarantee.
 
 ## Installation
