@@ -1,6 +1,6 @@
 # UsersnapRails
 
-The usersnap_rails gem integrates the Usersnap widget with the Rails asset pipeline.
+The usersnap-rails gem integrates the Usersnap widget with the Rails asset pipeline.
 This gem isn't maintained by the official Usersnap team, and it comes without any guarantee.
 
 ## Installation
@@ -8,7 +8,7 @@ This gem isn't maintained by the official Usersnap team, and it comes without an
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'usersnap_rails'
+gem 'usersnap-rails'
 ```
 
 And then execute:
@@ -19,22 +19,22 @@ And then execute:
 ### Include JavaScript assets
 Add to your app/assets/javascripts/application.js
 ```
-//= require usersnap_rails
+//= require usersnap-rails
 ```
 
 ### Include stylesheet assets
 Add to your app/assets/stylesheets/application.css
 ```
-*= require usersnap_rails
+*= require usersnap-rails
 ```
 
 Or if your manifest file is .scss
 ```
-@import "usersnap_rails";
+@import "usersnap-rails";
 ```
 
 ### Configure your Usersnap API key
-usersnap_rails assumes that your Usersnap API key is stored in a config variable called usersnap_api_key
+usersnap-rails assumes that your Usersnap API key is stored in a config variable called usersnap_api_key
 Set its value in an initializer (e.g. config/initializers/usersnap.rb) or in the environment-specific config files:
 ```
 Rails.application.config.usersnap_api_key = "x1x2a1-whatever-aa55";
@@ -57,7 +57,7 @@ The positioning of the element doesn't influence where the Usersnap-widget will 
 
 ## Contributing
 
-1. Fork it ( https://github.com/[my-github-username]/usersnap_rails/fork )
+1. Fork it ( https://github.com/[my-github-username]/usersnap-rails/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)

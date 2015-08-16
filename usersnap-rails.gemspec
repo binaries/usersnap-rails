@@ -1,15 +1,15 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'usersnap_rails/version'
+require 'usersnap-rails/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "usersnap_rails"
+  spec.name          = "usersnap-rails"
   spec.version       = UsersnapRails::VERSION
   spec.authors       = ["r11runner"]
   spec.email         = ["r11runner@gmail.com"]
-  spec.summary       = %q{includes the code snippet for Usersnap}
-  spec.homepage      = ""
+  spec.summary       = %q{Integrate the Usersnap-widget with Rails}
+  spec.homepage      = "https://github.com/r11runner/usersnap-rails"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")

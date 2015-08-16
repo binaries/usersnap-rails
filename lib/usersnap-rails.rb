@@ -1,4 +1,4 @@
-require "usersnap_rails/version"
+require "usersnap-rails/version"
 
 module UsersnapRails
   class Engine < ::Rails::Engine
