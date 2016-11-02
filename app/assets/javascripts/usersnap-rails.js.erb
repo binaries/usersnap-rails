@@ -1,6 +1,6 @@
 //= require usersnap
 
-$(document).on('page:load', function(event) {
+$(document).on('ready', function(event) {
     var usersnapTags = $(document).find("#include-usersnap-widget");
     if (usersnapTags.length){
 	loadUsersnapWidget('<%= Rails.application.config.usersnap_api_key %>');
